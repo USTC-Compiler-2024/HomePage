@@ -610,6 +610,48 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#使用桌面应用可视化界面" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用桌面应用（可视化界面）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="使用桌面应用（可视化界面）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      macOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linuxubuntu-debian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux（Ubuntu / Debian）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#官方资料" class="md-nav__link">
     <span class="md-ellipsis">
       官方资料
@@ -742,6 +784,48 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#使用桌面应用可视化界面" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用桌面应用（可视化界面）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="使用桌面应用（可视化界面）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      macOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linuxubuntu-debian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux（Ubuntu / Debian）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#官方资料" class="md-nav__link">
     <span class="md-ellipsis">
       官方资料
@@ -814,6 +898,21 @@ codex
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@openai/codex@latest<span class="w"> </span>
 </code></pre></div>
 <p>Windows PowerShell 和 Linux Bash 使用相同的 npm 命令。</p>
+<h2 id="使用桌面应用可视化界面">使用桌面应用（可视化界面）<a class="headerlink" href="#使用桌面应用可视化界面" title="Permanent link">&para;</a></h2>
+<p>OpenAI 提供的可视化桌面端是 ChatGPT 桌面应用，登录后可在应用中选择 Codex 使用。本节的安装方式不依赖 Node.js 或 npm。</p>
+<h3 id="macos">macOS<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h3>
+<p>从 <a href="https://chatgpt.com/download/">ChatGPT 官方下载页</a> 下载 macOS 安装包。打开下载的 <code>.dmg</code> 文件后，将 ChatGPT 拖入“应用程序”文件夹；随后打开 ChatGPT，使用 ChatGPT 账户登录，并在应用中选择 Codex。</p>
+<h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h3>
+<p>从 <a href="https://chatgpt.com/download/">ChatGPT 官方下载页</a> 下载并安装，也可在 <code>Microsoft Store</code> 安装。</p>
+<p>安装后打开 ChatGPT 桌面应用，使用 ChatGPT 账户登录。</p>
+<h3 id="linuxubuntu-debian">Linux（Ubuntu / Debian）<a class="headerlink" href="#linuxubuntu-debian" title="Permanent link">&para;</a></h3>
+<p>Linux 桌面应用目前为预览版。请在 <a href="https://chatgpt.com/download/">ChatGPT 官方下载页</a> 下载与处理器架构匹配的 <code>.deb</code> 安装包；可用以下命令查看架构：</p>
+<div class="highlight"><pre><span></span><code>uname<span class="w"> </span>-m
+</code></pre></div>
+<p>下载完成后，在安装包所在目录执行：</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>./chatgpt_amd64.deb
+</code></pre></div>
+<p>ARM64 设备请将文件名替换为 <code>chatgpt_arm64.deb</code>。安装后从应用程序菜单打开 ChatGPT，登录后选择 Codex。当前官方支持 Ubuntu 24.04/26.04 LTS 和 Debian 13 的桌面环境。</p>
 <h2 id="官方资料">官方资料<a class="headerlink" href="#官方资料" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://developers.openai.com/codex/cli/">OpenAI Codex CLI 文档</a></li>
@@ -827,7 +926,7 @@ codex
   <span class="md-icon" title="最后更新">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
   </span>
-  <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 11, 2026</span>
+  <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 14, 2026</span>
 </span>
     
 <span class="md-source-file__fact">
